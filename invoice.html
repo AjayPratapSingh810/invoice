@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 595px;
+            height: 841px;
+            position: relative;
+        }
+
+        .container {
+            padding: 37px 22px;
+        }
+
+        .header {
+            height: 120px;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 0 5px;
+            font-size: 40px;
+            color: #00183c;
+        }
+
+        .starLogo {
+            width: 22px;
+        }
+
+        .mainHeading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logoImage {
+            margin-top: 10px;
+            width: 278px;
+            height: 45px;
+        }
+
+        .logoContainer {
+            text-align: center;
+        }
+
+        .logoLines {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .detailsContainer {
+            margin: 10px 0;
+            width: 100%;
+            display: flex;
+            max-height: 200px;
+            min-height: 100px;
+        }
+
+        .billToContainer {
+            width: 38%;
+            margin-right: 10px;
+        }
+
+        .shipToContainer {
+            width: 27%;
+            margin-right: 7px;
+        }
+
+        .invoiceContainer {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .detailsHeading {
+            font: normal normal bold 15px Roboto;
+            color: #EE613D;
+        }
+
+        .smallDetails {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .smallText {
+            font: normal normal bold 13px Roboto;
+            color: #757575;
+        }
+
+        .invoiceDetail {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .orderDescription {
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - 421px);
+            max-height: calc(100vh - 321px);
+
+        }
+
+        .orderDescriptionHeading {
+            display: flex;
+            align-items: center;
+            background-color: #EE613D;
+            height: 35px;
+            font: normal normal bold 15px Roboto;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .itemsDescription {
+            display: flex;
+        }
+
+        .quantityHeading {
+            width: 15%;
+
+        }
+
+        .descriptionHeading {
+            width: 45%;
+        }
+
+        .itemPriceHeading {
+            text-align: right;
+            width: 20%;
+        }
+
+        .amountHeading {
+            text-align: right;
+            width: 20%;
+        }
+
+        .quantity {
+            width: 15%;
+            padding-right: 5px;
+        }
+
+        .description {
+            width: 45%;
+            padding-right: 5px;
+        }
+
+        .itemPrice {
+            width: 20%;
+            padding-right: 5px;
+            text-align: right;
+        }
+
+        .amount {
+            width: 20%;
+            padding-right: 5px;
+            text-align: right;
+        }
+
+        .footer {
+
+            height: 95px;
+            width: 551px;
+            padding: 0;
+            bottom: 0;
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+        }
+
+        .footerContent {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .line {
+            margin-bottom: 5px;
+        }
+
+        .footeraddress {
+            width: 50%;
+        }
+
+        .addressHeading {
+            font: normal normal bold 18px Roboto;
+            color: #EE613D;
+        }
+
+        .thankyouContainer {
+            width: 50%;
+            text-align: center;
+            font: normal normal bold 25px Roboto;
+            color: #EE613D;
+        }
+
+        .charges {
+            display: flex;
+        }
+
+        .demodiv {
+            width: 60%;
+        }
+
+        .chargesContainer {
+            width: 40%;
+        }
+
+        .subtotal {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .deliveryfee {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tax {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            font: normal normal bold 15px Roboto;
+            color: #EE613D;
+        }
+
+        .forleft {
+            width: 50%;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="mainHeading">
+                <img class="starLogo" src="./images/star.png" alt="">
+                <h1 class="heading">INVOICE</h1>
+                <img class="starLogo" src="./images/star.png" alt="">
+            </div>
+            <div class="logoContainer">
+                <img class="logoImage" src="./images/Group 3.png" alt="">
+            </div>
+            <div class="logoLines">
+                <div class="designLine1">
+                    <img src="./images/Line 2.png" alt="">
+                </div>
+                <div class="designLine2">
+                    <img src="./images/Line 2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="detailsContainer">
+            <div class="billToContainer">
+                <h3 class="detailsHeading">
+                    Bill To
+                </h3>
+                <div class="smallDetails smallText">
+                    <p class="name">Lorem, ipsum dolor.</p>
+                    <p class="address">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, porro?Lorem ipsum
+                        lorem dolor, sit amet consectetur adipisicing elit. Magni, fugiat!</p>
+                    <p class="gstIn">GstIn : 678ASSDDDDDDAAA</p>
+                </div>
+            </div>
+            <div class="shipToContainer">
+                <h3 class="detailsHeading">
+                    SHIP TO
+                </h3>
+                <div class="smallDetails smallText">
+                    <p class="name">Lorem, ipsum dolor. RamanPreet singh</p>
+                    <p class="address">Lorem ipsum dolor, Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Iure, laboriosam.sit amet consectetur adipisicing elit. Magni, fugiat!</p>
+                </div>
+            </div>
+            <div class="invoiceContainer">
+                <div class="invoiceDetail">
+                    <h3 class="detailsHeading">INVOICE#:</h3>
+                    <p class="smallText">jfdsgfjgdf</p>
+                </div>
+                <div class="invoiceDetail">
+                    <h3 class="detailsHeading">INVOICE DATE:</h3>
+                    <p class="smallText">2024-12-12</p>
+                </div>
+                <div class="invoiceDetail">
+                    <h3 class="detailsHeading">ORDER ID:</h3>
+                    <p class="smallText">444444</p>
+                </div>
+            </div>
+        </div>
+        <div class="orderDescription">
+            <div class="orderDescriptionHeading">
+                <div class="quantityHeading">
+                    <h3>Qty</h3>
+                </div>
+                <div class="descriptionHeading">
+                    <h3>Description</h3>
+                </div>
+                <div class="itemPriceHeading">
+                    <h3>Item Price</h3>
+                </div>
+                <div class="amountHeading">
+                    <h3>Amount</h3>
+                </div>
+            </div>
+            <div class="itemsDescription">
+                <div class="quantity">
+                    <p class="smallText">100</p>
+                </div>
+                <div class="description">
+                    <p class="smallText">Butter chicken mlaaii butter kofta naan and ras mlaaii</p>
+                </div>
+                <div class="itemPrice">
+                    <p class="smallText">20</p>
+                </div>
+                <div class="amount">
+                    <p class="smallText">20000</p>
+                </div>
+            </div>
+            <div class="charges">
+                <div class="demodiv"></div>
+                <div class="chargesContainer">
+                    <div class="subtotal">
+                        <p class="smallText forleft">Subtotal</p>
+                        <p class="smallText forleft">1100000</p>
+                    </div>
+                    <div class="deliveryfee">
+                        <p class="smallText forleft">Delivery Fee</p>
+                        <p class="smallText forleft">2000000</p>
+                    </div>
+                    <div class="tax">
+                        <p class="smallText forleft">Tax</p>
+                        <p class="smallText forleft">3000000</p>
+                    </div>
+                    <div class="total">
+                        <p class=" forleft">Total</p>
+                        <p class=" forleft">30000000</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="line">
+                <img src="./images/Line 3.png" alt="">
+            </div>
+            <div class="footerContent">
+                <div class="footeraddress">
+                    <p class="addressHeading">Communical Address</p>
+                    <p class="smallText">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veritatis sed voluptate quos
+                        quia
+                        odio?
+                    </p>
+                </div>
+                <div class="thankyouContainer">
+                    <h1>Thank You</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
